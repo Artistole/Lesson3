@@ -2,7 +2,8 @@
 
 :root
 {
-  --primary-color: #7C3AED;
+  --primary-color: #F87171;
+  --hazel-blue: #5BC3EB;
 }
 
 body{
@@ -82,10 +83,33 @@ hr
 
 .navigation .nav-pills
 {
-    text-align: right;
+    text-align: center;
 }
 
 .navigation .link
 {
     color:white;
+}
+
+/* header */
+
+.hero
+{
+    padding: 2rem;
+}
+
+.hero .hero-img
+{
+    
+    max-width: 100%;
+    width: 750px;
+    display: block;
+    margin: auto;
+}
+
+.hero .hero-heading
+{
+    padding-top: 1rem;
+    color: var(--hazel-blue);
+    text-align: center;
 }
