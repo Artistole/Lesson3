@@ -4,16 +4,26 @@
 {
   --primary-color: #F87171;
   --hazel-blue: #5BC3EB;
+  --offcolor: #D1D5DB;
 }
 
 body{
     font-family: 'Montserrat', sans-serif;
+    margin: 0px;
 }
 
 hr
 {
     margin: 2rem 0rem;
 }
+
+/* spaces */
+
+.margin-md 
+{
+    margin: 2rem;
+}
+
 .container
 {
     padding: 0rem 1rem;
@@ -25,16 +35,23 @@ hr
    margin: auto;
 }
 
-.conainer-fluid
+.mark 
 {
-
+    background-color: #F87171;
+    color: black;
+    padding: 0.5%;
+    border-radius: 0.2rem;
+    margin: 0 1%;
 }
 
 /** links **/
 .link
 {
+    box-sizing: border-box;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    /* margin-top: 1rem;
+    margin-bottom: 1rem; */
     
 }
 
@@ -62,7 +79,7 @@ hr
 .list-item-inline
 {
     display: inline;
-    padding 0rem 0.5rem;
+    padding: 0rem 0.5rem;
 }
 
 /* navigation */
@@ -90,6 +107,10 @@ hr
 {
     color:white;
 }
+ 
+.navigation .link-active {
+    font-weight: bold;
+}
 
 /* header */
 
@@ -112,4 +133,45 @@ hr
     padding-top: 1rem;
     color: var(--hazel-blue);
     text-align: center;
+}
+
+/* selection */
+
+.section
+{
+    padding: 2rem;
+}
+
+.section h2
+{
+  text-align:center ;
+}
+
+.offcolor
+{
+    background-color: var(--offcolor);
+    margin: 0px;
+}
+
+/* footer */
+
+.footer
+{
+   
+   background-color: var(--primary-color);
+   padding: 2rem 0rem;
+   text-align: center;
+   color: white;
+   border-top-right-radius: 1rem;
+
+}
+
+.footer .link
+{
+    color: white;
+}
+.footer .footer-header
+{
+    font-weight:bold ;
+    font-size: large;
 }
