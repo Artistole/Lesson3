@@ -164,7 +164,7 @@ hr
    padding: 2rem 0rem;
    text-align: center;
    color: white;
-   border-top-right-radius: 1rem;
+   /* border-top-right-radius: 1rem; */
 
 }
 
@@ -178,9 +178,22 @@ hr
     font-size: large;
 }
 
+.blog1
+{
+    margin-top: 1rem;
+    margin-left: 22rem;
+    margin-right: 22rem;
+    /* padding-bottom: 1rem; */
 
+}
 
-
+.blogone
+{
+    background-image: url(images/blog.jpg);
+    /* background-size: initial; */
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
  /* dropdown code  */
 
  /* Dropdown Button  */
