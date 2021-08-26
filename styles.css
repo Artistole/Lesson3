@@ -69,11 +69,26 @@ hr
     border: 1px solid var(--primary-color);
 }
 
+.link-secondary1
+{
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+    background-color: white;
+}
+
 /* lists */
 
 .list-non-bullet
 {
     list-style: none;
+    
+}
+
+.list-non-bullet
+{
+    list-style: none;
+    
 }
 
 .list-item-inline
@@ -155,6 +170,15 @@ hr
     margin: 0px;
 }
 
+.offpro
+{
+    background-color: var(--offcolor);
+    margin: 1rem 26rem;
+    width: 50%;
+    height: 12rem;
+    border-radius: 1rem;
+}
+
 /* footer */
 
 .footer
@@ -194,6 +218,8 @@ hr
     background-repeat: no-repeat;
     background-position-x: center;
 }
+
+
  /* dropdown code  */
 
  /* Dropdown Button  */
