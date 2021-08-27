@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 :root
 {
   --primary-color: #F87171;
@@ -8,8 +7,10 @@
 }
 
 body{
-    font-family: 'Montserrat', sans-serif;
-    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px auto;
+    max-width: 85%;
+    width: 100%;
 }
 
 hr
@@ -31,7 +32,8 @@ hr
 
 .container-center
 {
-   max-width: 600px;
+   max-width: 900px;
+   width: 100%;
    margin: auto;
 }
 
@@ -41,7 +43,8 @@ hr
     color: black;
     padding: 0.5%;
     border-radius: 0.2rem;
-    margin: 0 1%;
+    /* margin: 0 1%; */
+    margin: 1rem;
 }
 
 /** links **/
@@ -58,21 +61,32 @@ hr
 .link-primary
 {
     background-color: var(--primary-color);
-    border-radius: 0.5rem;
+    /* border-radius: 0.5rem; */
     color: white;
+    max-width: 140px;
+    border-radius: 2rem;
+    padding: 0.6rem 1.2rem;
+    margin: 1rem auto;
+
 }
 
 .link-secondary
 {
     color: var(--primary-color);
-    border-radius: 0.5rem;
+    /* border-radius: 0.5rem; */
     border: 1px solid var(--primary-color);
+    /* max-width: 140px;
+  margin: 1rem;
+  padding: 0.6rem 1.2rem; */
+  border-radius: 2rem;
+  
+  
 }
 
 .link-secondary1
 {
     color: var(--primary-color);
-    border-radius: 0.5rem;
+    border-radius: 2rem;
     border: 1px solid var(--primary-color);
     background-color: white;
 }
@@ -82,14 +96,15 @@ hr
 .list-non-bullet
 {
     list-style: none;
+    padding-inline-start: 0px;
     
 }
 
-.list-non-bullet
+/* .list-non-bullet
 {
     list-style: none;
     
-}
+} */
 
 .list-item-inline
 {
@@ -104,20 +119,29 @@ hr
     background-color: var(--primary-color);
     color: white;
     padding: 1rem;
+    /* border-bottom-right-radius: 1rem; */
+    border-bottom-left-radius: 1rem;
 }
 
 .navigation .nav-brand
 {
     font-weight: bold;
-    font-size: 1.1rem;
+    /* font-size: 1.1rem;
     text-align: center;
-    padding: 1rem;
+    padding: 1rem; */
     
+}
+
+.nav-brand a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .navigation .nav-pills
 {
-    text-align: center;
+    text-align: right;
+    margin: 0.6rem 1rem;
+
 }
 
 .navigation .link
@@ -134,6 +158,7 @@ hr
 .hero
 {
     padding: 2rem;
+    padding-top: 5rem;
 }
 
 .hero .hero-img
@@ -157,6 +182,10 @@ hr
 .section
 {
     padding: 2rem;
+
+    margin: 2rem 0;
+  border-radius: 1rem;
+  text-align: center;
 }
 
 .section h2
@@ -167,17 +196,34 @@ hr
 .offcolor
 {
     background-color: var(--offcolor);
-    margin: 0px;
 }
 
 .offpro
 {
-    background-color: var(--offcolor);
+    /* background-color: var(--offcolor);
     margin: 1rem 26rem;
+    margin: 3rem auto;
     width: 50%;
     height: 12rem;
     border-radius: 1rem;
+    padding: 2rem; */
+    padding: 2rem;
+    border-radius: 1rem;
+    /* text-align: center; */
+    margin: 2rem auto;
+    /* margin: 2rem 0; */
+    text-align: center;
 }
+
+.offpro h1
+{
+    margin: 0.5rem;
+}
+
+.offpro p {
+    padding-bottom: 1rem;
+  }
+  
 
 /* footer */
 
@@ -185,10 +231,10 @@ hr
 {
    
    background-color: var(--primary-color);
-   padding: 2rem 0rem;
+   padding: 2rem 1rem;
    text-align: center;
    color: white;
-   /* border-top-right-radius: 1rem; */
+   border-top-right-radius: 1rem;
 
 }
 
@@ -200,6 +246,10 @@ hr
 {
     font-weight:bold ;
     font-size: large;
+}
+
+.footer ul {
+  padding-inline-start: 0px;
 }
 
 .blog1
@@ -219,6 +269,25 @@ hr
     background-position-x: center;
 }
 
+@media (max-width: 900px) {
+    body {
+      max-width: 95%;
+      width: 100%;
+    }
+
+    .list-item-inline {
+      display: inline;
+      padding: 0rem;
+    }
+  
+    .container-center {
+      width: auto;
+    }
+  
+    .link-primary {
+      display: block;
+    }
+  }
 
  /* dropdown code  */
 
